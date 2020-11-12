@@ -6,3 +6,29 @@
 .container {
     
 }
+
+#footer {
+    text-align: center;
+}
+
+.col-md-2 {
+    border-style: solid;
+    border-color: antiquewhite;
+    height: 75px;
+}
+
+.col-md-9 {
+    border-style:  solid;
+    border-color: antiquewhite;
+    height: 75px;
+}
+
+#save {
+    width: 100%;
+    text-align: center;
+}
+
+.col-md-1 {
+    padding-left: 1px;
+   
+}
