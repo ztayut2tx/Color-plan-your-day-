@@ -1,5 +1,32 @@
-var today = moment().format('MMMM Do YYYY, h:mm:ss a');
-    $("#rightNow").text(today);
-    console.log(today);
+$(document).ready(function(){
+    today= $("#rightNow");
+    clock= moment().format("H");
+
+    today.text(moment().format('dddd, LL'));
+
+
+$(".inputBlk").each(thisHour);
+ 
+function thisHour() {
+    colorHour = ($(this).attr("hourVal"));
+    colorHour = parseInt(colorHour);
+
+    if (colorHour == clock) {
+        $(this).addClass("Now");
+    }
+    else if (colorHour < clock) {
+        $(this).addClass("past");
+    }
+    else {
+        $(this).addClass("future");
+    }
+}
+})
+
     
+
+
+
+    
+
 
