@@ -1,6 +1,12 @@
 .jumbotron {
     text-align: center;
+    font-family: 'Goldman', cursive;
+    background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/12/58/PJwkKp.jpg) ;
+    background-color: #cccccc;
+}
 
+#rightNow {
+    background-color: antiquewhite;
 }
 
 span {
@@ -15,7 +21,7 @@ textarea {
     background: transparent;
     border: solid;
     resize: none;
-    color: #000000;
+    color: #f9fcfb;
     border-left: 2px solid black;
     padding:10px;
     width: 100%;
@@ -27,6 +33,7 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 1em;
+    
 }
 
 
