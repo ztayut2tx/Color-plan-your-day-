@@ -21,6 +21,19 @@ function thisHour() {
         $(this).addClass("future");
     }
 }
+
+$(".btn").on("click", function(event) {
+    event.preventDefault();
+
+    saveHour = event.target.parentElement.children[1].firstElementChild.getAtrribute("hourVal");
+    enteredTxt = event.target.parentElement.parentElement.children[1].firstElementChild.value;
+
+    if (enteredTxt != null || undefined) {
+        localStorage.setItem(saveHour, enteredTxt);
+    };
+})
+
+
 })
 
     
